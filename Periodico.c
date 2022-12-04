@@ -4,6 +4,7 @@
 int main (){
 char edit[0];
 
+
 printf("Bievenido a este programa para saber si una noticia es Fake\n");
 printf("\nPara insertar el nombre del periodico tiene que poner el nombre del periodico (Recomendamos Copiar y pegar)");
 printf(" Inserte el nombre del periodico:\n  ");
@@ -11,6 +12,7 @@ scanf("%[^\n]",&edit);
 
 if( strcmp(edit,"EL MUNDO")== 0){
     printf("El Periodico The Wall Street Journal es confiable,pero revise en otros\n",edit);
+    
 }
 
     else if ( strcmp(edit,"EL PAIS")== 0){
@@ -38,7 +40,9 @@ else if(strcmp(edit, "Antena 3")== 0){
     }
     else{
     printf("Ese periodico no es confiable o poco conocido(Contacte con soporte)");
+    
 }
+printf("\nSi quiere volver a usar el programa vuelva a cerrarlo y abrirlo\n\n");
 system("pause");
 return 0;
 
